@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://c75gwqbtpnb6x"]
+
+[ext_resource type="Script" uid="uid://bv57pxmfjseij" path="res://src/Player/player.gd" id="1_1gn11"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rc2ur"]
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1gn11"]
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fdvkn"]
+radius = 0.1
+height = 0.4
+
+[node name="Player" type="CharacterBody3D"]
+collision_layer = 15
+collision_mask = 15
+script = ExtResource("1_1gn11")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.881094, 0)
+shape = SubResource("CapsuleShape3D_rc2ur")
+debug_color = Color(0.145098, 0.333333, 0.301961, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("CapsuleMesh_1gn11")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D/MeshInstance3D"]
+transform = Transform3D(0.0384924, 0.999259, 0, -0.999259, 0.0384924, 0, 0, 0, 1, 0, 0.511308, -0.464253)
+mesh = SubResource("CapsuleMesh_fdvkn")

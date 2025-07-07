@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://djudqismlvagt"]
+[gd_scene load_steps=3 format=3 uid="uid://djudqismlvagt"]
 
 [ext_resource type="PackedScene" uid="uid://dlkyqmhh5yfpr" path="res://assets/low poly dungeon sample.fbx" id="1_eewff"]
+[ext_resource type="PackedScene" uid="uid://c75gwqbtpnb6x" path="res://src/Player/player.tscn" id="2_gh0ne"]
 
 [node name="Main" type="Node3D"]
 
@@ -10,5 +11,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3375, 0, -6.61892)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.0871558, 0.996195, 0, -0.996195, -0.0871558, 0, 12.2565, 0)
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.40599, 0)
+[node name="Player" parent="." instance=ExtResource("2_gh0ne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.131438, 0)
+
+[node name="Camera3D2" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 0.544639, 0.838671, 0, -0.838671, 0.544639, 0, 5.99883, 3.51091)
