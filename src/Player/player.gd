@@ -2,7 +2,9 @@ extends CharacterBody3D
 
 @export var speed = 10
 @export var maxStamina = 5
+@export var speedGrowth = 0.5
 var stamina = maxStamina
+var currentSpeed = 1
 
 var newVelocity = Vector3.ZERO
 
@@ -24,9 +26,17 @@ func _physics_process(delta: float) -> void:
 	
 	if movementDirection != Vector3.ZERO:
 		movementDirection = movementDirection.normalized()
+		currentSpeed += speedGrowth
+		if currentSpeed > speed:
+			currentSpeed = speed
+	else:
+		if currentSpeed > 1:
+			currentSpeed -= 2 * speedGrowth
+		if currentSpeed < 1:
+			currentSpeed = 1
 	
-	newVelocity.x = movementDirection.x * speed * sprintModifier
-	newVelocity.z = movementDirection.z * speed * sprintModifier
+	newVelocity.x = movementDirection.x * currentSpeed * sprintModifier
+	newVelocity.z = movementDirection.z * currentSpeed * sprintModifier
 	
 	velocity = newVelocity
 	move_and_slide()
