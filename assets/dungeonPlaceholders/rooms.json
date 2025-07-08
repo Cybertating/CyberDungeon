@@ -1,0 +1,70 @@
+[
+	{
+		"id": 0,
+		"roomFile": "res://assets/dungeonPlaceholders/1d.glb",
+		"isDeadEnd": true,
+		"chunks": [
+		{ "location": [0, 0], "doorFlags": 1 },
+	  ]
+	},
+	{
+		"id": 1,
+		"roomFile": "res://assets/dungeonPlaceholders/2dn.glb",
+		"isDeadEnd": false,
+		"chunks": [
+		{ "location": [0, 0], "doorFlags": 3 },
+	  ]
+	},
+	{
+		"id": 2,
+		"roomFile": "res://assets/dungeonPlaceholders/2do.glb",
+		"isDeadEnd": false,
+		"chunks": [
+		{ "location": [0, 0], "doorFlags": 5 },
+	  ]
+	},
+	{
+		"id": 3,
+		"roomFile": "res://assets/dungeonPlaceholders/3d.glb",
+		"isDeadEnd": false,
+		"chunks": [
+		{ "location": [0, 0], "doorFlags": 11 },
+	  ]
+	},
+	{
+		"id": 4,
+		"roomFile": "res://assets/dungeonPlaceholders/4d.glb",
+		"isDeadEnd": false,
+		"chunks": [
+		{ "location": [0, 0], "doorFlags": 15 },
+	  ]
+	},
+	{
+		"id": 5,
+		"roomFile": "res://assets/dungeonPlaceholders/plus.glb",
+		"isDeadEnd": false,
+		"chunks": [
+		{ "location": [0, 0], "doorFlags": 0 },
+		{ "location": [1, 0], "doorFlags": 0 },
+		{ "location": [-1, 0], "doorFlags": 0 },
+		{ "location": [0, 1], "doorFlags": 2},
+		{ "location": [0, -1], "doorFlags": 3 },
+	  ]
+	},
+	{
+		"id": 6,
+		"roomFile": "res://assets/dungeonPlaceholders/3x3.glb",
+		"isDeadEnd": false,
+		"chunks": [
+		{ "location": [0, 0], "doorFlags": 0 },
+		{ "location": [1, 0], "doorFlags": 0 },
+		{ "location": [-1, 0], "doorFlags": 0 },
+		{ "location": [0, 1], "doorFlags": 0 },
+		{ "location": [0, -1], "doorFlags": 1 },
+		{ "location": [1, 1], "doorFlags": 0 },
+		{ "location": [-1, 1], "doorFlags": 8 },
+		{ "location": [1, -1], "doorFlags": 0 },
+		{ "location": [-1, -1], "doorFlags": 0 },
+	  ]
+	},
+]

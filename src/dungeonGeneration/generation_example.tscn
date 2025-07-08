@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd00u364een0e"]
+
+[ext_resource type="Script" uid="uid://rpoqe6qtei4j" path="res://src/dungeonGeneration/dungeon_generator.gd" id="1_na74a"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 100, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, -10.9196, 19.5821, 0)
+light_energy = 0.25
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-4.37114e-08, -0.707107, 0.707107, 0, 0.707107, 0.707107, -1, 3.09086e-08, -3.09086e-08, -2.97836, 19.5821, 0)
+light_energy = 0.25
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-1, 6.18172e-08, -6.18172e-08, 0, 0.707107, 0.707107, 8.74228e-08, 0.707107, -0.707107, 4.95483, 19.5821, 0)
+light_energy = 0.25
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1.19249e-08, 0.707107, -0.707107, 0, 0.707107, 0.707107, 1, -8.43216e-09, 8.43216e-09, 11.3386, 19.5821, 0)
+light_energy = 0.25
+
+[node name="Node3D" type="Node3D" parent="."]
+script = ExtResource("1_na74a")
