@@ -3,14 +3,29 @@ extends CharacterBody3D
 @export var speed = 10
 @export var maxStamina = 5
 @export var speedGrowth = 0.5
+@onready var camera : Camera3D = $Camera3D
+@onready var model = $PlayerColision
 var stamina = maxStamina
 var currentSpeed = 1
 
 var newVelocity = Vector3.ZERO
 
 func _physics_process(delta: float) -> void:
+	
 	var movementDirection = Vector3.ZERO
 	var sprintModifier = 1
+	
+	var mousePosition = get_viewport().get_mouse_position()
+	var rayLength = 10000
+	var rayStart = camera.project_ray_origin(mousePosition)
+	var rayTarget = rayStart + camera.project_ray_normal(mousePosition) * rayLength
+	var rayResult = Plane.PLANE_XZ.intersects_ray(rayStart, rayTarget)
+	if rayResult != null:
+		var lookVector = Vector3.ZERO
+		lookVector.y = position.y
+		lookVector.x = rayResult.x
+		lookVector.z = rayResult.z
+		model.look_at(lookVector)
 	
 	if Input.is_action_pressed("GoForward"):
 		movementDirection.z -= 1

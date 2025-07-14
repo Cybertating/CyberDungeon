@@ -17,14 +17,20 @@ collision_layer = 15
 collision_mask = 15
 script = ExtResource("1_1gn11")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 6, 10, 6)
+projection = 1
+size = 10.0
+near = 0.001
+
+[node name="PlayerColision" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.881094, 0)
 shape = SubResource("CapsuleShape3D_rc2ur")
 debug_color = Color(0.145098, 0.333333, 0.301961, 1)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerColision"]
 mesh = SubResource("CapsuleMesh_1gn11")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D/MeshInstance3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerColision/MeshInstance3D"]
 transform = Transform3D(0.0384924, 0.999259, 0, -0.999259, 0.0384924, 0, 0, 0, 1, 0, 0.511308, -0.464253)
 mesh = SubResource("CapsuleMesh_fdvkn")
