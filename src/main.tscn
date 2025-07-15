@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://djudqismlvagt"]
+[gd_scene load_steps=19 format=3 uid="uid://djudqismlvagt"]
 
 [ext_resource type="PackedScene" uid="uid://dlkyqmhh5yfpr" path="res://assets/low poly dungeon sample.fbx" id="1_eewff"]
 [ext_resource type="PackedScene" uid="uid://c75gwqbtpnb6x" path="res://src/Player/player.tscn" id="2_gh0ne"]
@@ -48,6 +48,9 @@ points = PackedVector3Array(0, 0, 0, 0, 3.1, 0, 0, 0, 3.2, 0, 0, 0, 0, 3.1, 3.2,
 [sub_resource type="BoxShape3D" id="BoxShape3D_tb146"]
 size = Vector3(0.65625, 1.20221, 0.709351)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_mlv6i"]
+size = Vector3(44.63, 1, 30.6449)
+
 [node name="Main" type="Node3D"]
 
 [node name="low poly dungeon sample" parent="." instance=ExtResource("1_eewff")]
@@ -57,7 +60,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.33539, 0.0945377, -6.75341)
 transform = Transform3D(1, 0, 0, 0, -0.0871558, 0.996195, 0, -0.996195, -0.0871558, 0, 12.2565, 0)
 
 [node name="Player" parent="." instance=ExtResource("2_gh0ne")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05895, 0)
 collision_layer = 1
 collision_mask = 1
 
@@ -130,3 +133,7 @@ shape = SubResource("BoxShape3D_tb146")
 [node name="CollisionShape3D16" type="CollisionShape3D" parent="Collisions"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.8528, 0.685999, -1.97116)
 shape = SubResource("BoxShape3D_tb146")
+
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="Collisions"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.21876, -0.455798, -10.5866)
+shape = SubResource("BoxShape3D_mlv6i")
