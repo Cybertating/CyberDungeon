@@ -1,11 +1,15 @@
 extends CharacterBody3D
 
-@export var speed = 10
-@export var maxStamina = 5
-@export var speedGrowth = 0.5
-@export var gravity = 1.5
+@export var speed : float = 10
+@export var maxStamina : float = 5
+@export var speedGrowth : float = 0.5
+@export var gravity : float = 1.5
+@export var minimumRotationDistance : float = 0.1
+
 @onready var camera : Camera3D = $Camera3D
 @onready var model = $PlayerColision
+
+
 var stamina = maxStamina
 var currentSpeed = 1
 
@@ -20,14 +24,27 @@ func _physics_process(delta: float) -> void:
 	var rayLength = 10000
 	var rayStart = camera.project_ray_origin(mousePosition)
 	var rayTarget = rayStart + camera.project_ray_normal(mousePosition) * rayLength
-	var rayResult = Plane.PLANE_XZ.intersects_ray(rayStart, rayTarget)
-	if rayResult != null:
-		var lookVector = Vector3.ZERO
+	var spaceState = get_world_3d().direct_space_state
+	var rayQuery = PhysicsRayQueryParameters3D.new()
+	rayQuery.from = rayStart
+	rayQuery.to = rayTarget
+	var rayQueryResult = spaceState.intersect_ray(rayQuery)
+	var lookVector = rayQueryResult.get("position")
+	if lookVector != null:
 		lookVector.y = position.y + 1
-		lookVector.x = rayResult.x
-		lookVector.z = rayResult.z
-		print_debug(lookVector)
-		model.look_at(lookVector)
+		
+		#alternative rotation fix (causes problems with rotation towards camera) may be better if improved
+		#if abs(position.x - lookVector.x) < minimumRotationDistance:
+		#	lookVector.x += sign(lookVector.x) * minimumRotationDistance
+		#if abs(position.z - lookVector.z) < minimumRotationDistance:
+		#	lookVector.z += sign(lookVector.z) * minimumRotationDistance
+		#model.look_at(lookVector)
+		
+		#print_debug(lookVector)
+		
+		#current rotation fix, disables rotation when mouse is to close to player
+		if abs(position.x - lookVector.x) > minimumRotationDistance and abs(position.z - lookVector.z) > minimumRotationDistance:
+			model.look_at(lookVector)
 	
 	if Input.is_action_pressed("GoForward"):
 		movementDirection.z -= 1
