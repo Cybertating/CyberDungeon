@@ -1,25 +1,54 @@
 extends CharacterBody3D
 
-@export var speed : float = 10
-@export var maxStamina : float = 5
-@export var speedGrowth : float = 0.5
-@export var gravity : float = 1.5
+class_name Player
+
+@export var speed: float = 7.0
+@export var sprint_multiplier: float = 1.8
+@export var acceleration: float = 30.0
+@export var deceleration: float = 60.0
+@export var jump_velocity: float = 7.0
+@export var gravity: float = 35.0
 @export var minimumRotationDistance : float = 0.1
 
 @onready var camera : Camera3D = $Camera3D
 @onready var model = $PlayerColision
+@onready var damaged_audio_player: AudioSetPlayer = $DamagedAudioPlayer
 
-
-var stamina = maxStamina
 var currentSpeed = 1
 
-var newVelocity = Vector3.ZERO
+var external_velocity := Vector3.ZERO
+
+## Apply a force to the Player
+func apply_impulse(impulse: Vector3):
+	external_velocity += impulse
+
+## Push the player back (relative to their current velocity)
+## Can also accept vercical_strength to additionaly launch
+## the player upward (the direction is independent of player's velocity)
+func push_back(strength: float, vertical_strength: float = 0.0):
+	var direction = velocity
+	direction.y = 0
+	direction = direction.normalized()
+	direction.y = 1
+	external_velocity = direction * Vector3(-strength, vertical_strength, -strength)
+
+func _get_input_direction() -> Vector3:
+	var direction = Vector3.ZERO
+	if Input.is_action_pressed("GoForward"):
+		direction.x -= 1.0
+		direction.z -= 1.0
+	if Input.is_action_pressed("GoBackward"):
+		direction.z += 1.0
+		direction.x += 1.0
+	if Input.is_action_pressed("GoLeft"):
+		direction.x -= 1.0
+		direction.z += 1.0
+	if Input.is_action_pressed("GoRight"):
+		direction.x += 1.0
+		direction.z -= 1.0
+	return direction.normalized()
 
 func _physics_process(delta: float) -> void:
-	
-	var movementDirection = Vector3.ZERO
-	var sprintModifier = 1
-	
 	var mousePosition = get_viewport().get_mouse_position()
 	var rayLength = 10000
 	var rayStart = camera.project_ray_origin(mousePosition)
@@ -46,34 +75,31 @@ func _physics_process(delta: float) -> void:
 		if abs(position.x - lookVector.x) > minimumRotationDistance and abs(position.z - lookVector.z) > minimumRotationDistance:
 			model.look_at(lookVector)
 	
-	if Input.is_action_pressed("GoForward"):
-		movementDirection.z -= 1
-	if Input.is_action_pressed("GoBackward"):
-		movementDirection.z += 1
-	if Input.is_action_pressed("GoLeft"):
-		movementDirection.x -= 1
-	if Input.is_action_pressed("GoRight"):
-		movementDirection.x += 1
-		
-	if Input.is_action_pressed("Sprint") and stamina > 0:
-		sprintModifier = 1.3
+	var direction = _get_input_direction()
+	var is_sprinting = Input.is_action_pressed("Sprint")
+	var target_speed = speed * (sprint_multiplier if is_sprinting else 1.0)
+	var target_velocity = direction * target_speed
 	
-	if movementDirection != Vector3.ZERO:
-		movementDirection = movementDirection.normalized()
-		currentSpeed += speedGrowth
-		if currentSpeed > speed:
-			currentSpeed = speed
+	var velocity_difference = target_velocity - velocity
+	var max_speed_change = (acceleration * delta) if velocity_difference.length() > 0 else deceleration * delta
+	velocity.x += clamp(velocity_difference.x, -max_speed_change, max_speed_change)
+	velocity.z += clamp(velocity_difference.z, -max_speed_change, max_speed_change)
+	
+	# Handle gravity and jumping
+	if not is_on_floor():
+		velocity.y -= gravity * delta
 	else:
-		if currentSpeed > 1:
-			currentSpeed -= 2 * speedGrowth
-		if currentSpeed < 1:
-			currentSpeed = 1
-			
-	if !is_on_floor():
-		newVelocity.y -= gravity * delta
+		if Input.is_action_pressed("Jump"):
+			velocity.y = jump_velocity
+		else:
+			velocity.y = 0
 	
-	newVelocity.x = movementDirection.x * currentSpeed * sprintModifier
-	newVelocity.z = movementDirection.z * currentSpeed * sprintModifier
+	# Handle external forces
+	if not external_velocity.is_zero_approx():
+		velocity += external_velocity
+		external_velocity = Vector3.ZERO
 	
-	velocity = newVelocity
 	move_and_slide()
+
+func _on_damaged(_new_value: float, _by_who: Variant) -> void:
+	damaged_audio_player.play()

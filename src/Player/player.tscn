@@ -1,6 +1,28 @@
-[gd_scene load_steps=5 format=3 uid="uid://c75gwqbtpnb6x"]
+[gd_scene load_steps=27 format=3 uid="uid://c75gwqbtpnb6x"]
 
 [ext_resource type="Script" uid="uid://bv57pxmfjseij" path="res://src/Player/player.gd" id="1_1gn11"]
+[ext_resource type="PackedScene" uid="uid://728sar0ono8p" path="res://src/Health/Health.tscn" id="2_fdvkn"]
+[ext_resource type="PackedScene" uid="uid://byc0gnothbr8p" path="res://src/AudioSetPlayer/AudioSetPlayer.tscn" id="3_5wxl6"]
+[ext_resource type="AudioStream" uid="uid://cpinlm30oa835" path="res://assets/sounds/player-damage/player-damage-001.wav" id="4_avk67"]
+[ext_resource type="AudioStream" uid="uid://w0dqux6jsj1n" path="res://assets/sounds/player-damage/player-damage-002.wav" id="5_r70oh"]
+[ext_resource type="AudioStream" uid="uid://df3tdrv7fhqnf" path="res://assets/sounds/player-damage/player-damage-003.wav" id="6_u5le1"]
+[ext_resource type="AudioStream" uid="uid://hrjq5cgdjiep" path="res://assets/sounds/player-damage/player-damage-004.wav" id="7_m5l6m"]
+[ext_resource type="AudioStream" uid="uid://di4bfqsyykwj7" path="res://assets/sounds/player-damage/player-damage-005.wav" id="8_kvu3c"]
+[ext_resource type="AudioStream" uid="uid://8snn8f2j684m" path="res://assets/sounds/player-damage/player-damage-006.wav" id="9_mihwj"]
+[ext_resource type="AudioStream" uid="uid://bomq2erkrprv7" path="res://assets/sounds/player-damage/player-damage-007.wav" id="10_6mn63"]
+[ext_resource type="AudioStream" uid="uid://b3djy5gks3old" path="res://assets/sounds/player-damage/player-damage-008.wav" id="11_tebpe"]
+[ext_resource type="AudioStream" uid="uid://3i6jh1ssdt8i" path="res://assets/sounds/player-damage/player-damage-009.wav" id="12_5ecx0"]
+[ext_resource type="AudioStream" uid="uid://01xgm3fdc8yl" path="res://assets/sounds/player-damage/player-damage-010.wav" id="13_bxc0l"]
+[ext_resource type="AudioStream" uid="uid://burwwq4bgvtxf" path="res://assets/sounds/player-damage/player-damage-011.wav" id="14_tx5l8"]
+[ext_resource type="AudioStream" uid="uid://d1j5ngskxl7bn" path="res://assets/sounds/player-damage/player-damage-012.wav" id="15_n44p4"]
+[ext_resource type="AudioStream" uid="uid://l77a3livg8v1" path="res://assets/sounds/player-damage/player-damage-013.wav" id="16_37cnm"]
+[ext_resource type="AudioStream" uid="uid://d3o781drvyecw" path="res://assets/sounds/player-damage/player-damage-014.wav" id="17_gdfe5"]
+[ext_resource type="AudioStream" uid="uid://bkyvr041uss22" path="res://assets/sounds/player-damage/player-damage-015.wav" id="18_52efb"]
+[ext_resource type="AudioStream" uid="uid://7q6nmo6jqou0" path="res://assets/sounds/player-damage/player-damage-016.wav" id="19_ghl5d"]
+[ext_resource type="AudioStream" uid="uid://c3gwj60wwm16q" path="res://assets/sounds/player-damage/player-damage-017.wav" id="20_l1hfx"]
+[ext_resource type="AudioStream" uid="uid://c5b6rlxavva0f" path="res://assets/sounds/player-damage/player-damage-018.wav" id="21_rxjh3"]
+[ext_resource type="AudioStream" uid="uid://kgt0p0xxinfw" path="res://assets/sounds/player-damage/player-damage-019.wav" id="22_j18yy"]
+[ext_resource type="AudioStream" uid="uid://cnq2id352qcro" path="res://assets/sounds/player-damage/player-damage-020.wav" id="23_2nq7w"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rc2ur"]
 height = 1.8
@@ -16,6 +38,12 @@ height = 0.4
 collision_layer = 15
 collision_mask = 15
 script = ExtResource("1_1gn11")
+
+[node name="Health" parent="." instance=ExtResource("2_fdvkn")]
+
+[node name="DamagedAudioPlayer" parent="." instance=ExtResource("3_5wxl6")]
+volume_db = -15.0
+sounds = Array[AudioStream]([ExtResource("4_avk67"), ExtResource("5_r70oh"), ExtResource("6_u5le1"), ExtResource("7_m5l6m"), ExtResource("8_kvu3c"), ExtResource("9_mihwj"), ExtResource("10_6mn63"), ExtResource("11_tebpe"), ExtResource("12_5ecx0"), ExtResource("13_bxc0l"), ExtResource("14_tx5l8"), ExtResource("15_n44p4"), ExtResource("16_37cnm"), ExtResource("17_gdfe5"), ExtResource("18_52efb"), ExtResource("19_ghl5d"), ExtResource("20_l1hfx"), ExtResource("21_rxjh3"), ExtResource("22_j18yy"), ExtResource("23_2nq7w")])
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 6, 10, 6)
@@ -34,3 +62,5 @@ mesh = SubResource("CapsuleMesh_1gn11")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerColision/MeshInstance3D"]
 transform = Transform3D(0.0384924, 0.999259, 0, -0.999259, 0.0384924, 0, 0, 0, 1, 0, 0.511308, -0.464253)
 mesh = SubResource("CapsuleMesh_fdvkn")
+
+[connection signal="damaged" from="Health" to="." method="_on_damaged"]

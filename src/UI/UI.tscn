@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://djckklq5juskp"]
+
+[ext_resource type="Script" uid="uid://bebr6x3m102wj" path="res://src/UI/ui.gd" id="1_22rot"]
+[ext_resource type="Texture2D" uid="uid://djj5mr053eung" path="res://assets/knight_picture.png" id="1_642jo"]
+
+[sub_resource type="Gradient" id="Gradient_22rot"]
+colors = PackedColorArray(0.268634, 1.8049e-07, 7.21961e-08, 1, 1, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m333m"]
+gradient = SubResource("Gradient_22rot")
+width = 256
+height = 28
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_22rot")
+
+[node name="KnightPicture" type="Sprite2D" parent="."]
+position = Vector2(77.25, 539.055)
+scale = Vector2(0.454023, 0.454023)
+texture = ExtResource("1_642jo")
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 18.9999
+offset_top = 599.0
+offset_right = 275.0
+offset_bottom = 627.0
+value = 100.0
+texture_progress = SubResource("GradientTexture2D_m333m")
+
+[node name="HealthLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 599.0
+offset_right = 160.0
+offset_bottom = 709.0
+scale = Vector2(0.25, 0.25)
+theme_override_font_sizes/font_size = 80
+text = "100"
