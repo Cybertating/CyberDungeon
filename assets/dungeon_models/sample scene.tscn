@@ -1,0 +1,623 @@
+[gd_scene load_steps=155 format=3 uid="uid://c5n1q6gukmnsv"]
+
+[ext_resource type="PackedScene" uid="uid://8ammufvf0lu7" path="res://assets/dungeon_models/exports/barrel.015.fbx" id="1_ell1y"]
+[ext_resource type="PackedScene" uid="uid://foxrrw6j1ml5" path="res://assets/dungeon_models/exports/barrel.fbx" id="2_tqg3m"]
+[ext_resource type="PackedScene" uid="uid://cui0nwo2k3b34" path="res://assets/dungeon_models/exports/bars.001.fbx" id="3_maubd"]
+[ext_resource type="PackedScene" uid="uid://dmyjywdtnv5pg" path="res://assets/dungeon_models/exports/blade trap base.fbx" id="4_egjvq"]
+[ext_resource type="PackedScene" uid="uid://cua58h88i7le0" path="res://assets/dungeon_models/exports/bone.fbx" id="5_2cdq0"]
+[ext_resource type="PackedScene" uid="uid://b7y4oiusml8nf" path="res://assets/dungeon_models/exports/brick wall with bars.001.fbx" id="6_0sgux"]
+[ext_resource type="PackedScene" uid="uid://cl4tdx62t6mab" path="res://assets/dungeon_models/exports/brick wall with bars.fbx" id="7_mt4gu"]
+[ext_resource type="PackedScene" uid="uid://dmyxsuynebkfj" path="res://assets/dungeon_models/exports/brick wall with door.001.fbx" id="8_pubo4"]
+[ext_resource type="PackedScene" uid="uid://c8ey8y54gyt7l" path="res://assets/dungeon_models/exports/brick wall with door.fbx" id="9_hlq3x"]
+[ext_resource type="PackedScene" uid="uid://dwinp0b1l63sn" path="res://assets/dungeon_models/exports/brick wall without door.001.fbx" id="10_qqsnm"]
+[ext_resource type="PackedScene" uid="uid://bg354xffxv4xu" path="res://assets/dungeon_models/exports/brick wall without door.fbx" id="11_gfhlq"]
+[ext_resource type="PackedScene" uid="uid://caupj6niwstss" path="res://assets/dungeon_models/exports/brick wall.001.fbx" id="12_qwkhp"]
+[ext_resource type="PackedScene" uid="uid://c745c2dwikadr" path="res://assets/dungeon_models/exports/brick wall.002.fbx" id="13_aser2"]
+[ext_resource type="PackedScene" uid="uid://8imwhm3hk5e3" path="res://assets/dungeon_models/exports/brick wall.003.fbx" id="14_l3v7l"]
+[ext_resource type="PackedScene" uid="uid://44dqiswunbr7" path="res://assets/dungeon_models/exports/brick wall.004.fbx" id="15_juv8m"]
+[ext_resource type="PackedScene" uid="uid://c5ri6jweut3fb" path="res://assets/dungeon_models/exports/brick wall.005.fbx" id="16_t36m7"]
+[ext_resource type="PackedScene" uid="uid://dsdcctpdfv7tj" path="res://assets/dungeon_models/exports/brick wall.fbx" id="17_o0ade"]
+[ext_resource type="PackedScene" uid="uid://bponk2s3fb5bj" path="res://assets/dungeon_models/exports/brick.fbx" id="18_xrufs"]
+[ext_resource type="PackedScene" uid="uid://mrxqnhmhq6ow" path="res://assets/dungeon_models/exports/bricks.001.fbx" id="19_vr4tv"]
+[ext_resource type="PackedScene" uid="uid://d064nbmeritru" path="res://assets/dungeon_models/exports/bricks.fbx" id="20_ogcag"]
+[ext_resource type="PackedScene" uid="uid://6n6onjy4snt1" path="res://assets/dungeon_models/exports/candle.001.fbx" id="21_tugx3"]
+[ext_resource type="PackedScene" uid="uid://bjsls42dx2xhs" path="res://assets/dungeon_models/exports/candle.002.fbx" id="22_leiul"]
+[ext_resource type="PackedScene" uid="uid://143stbj02oug" path="res://assets/dungeon_models/exports/candle.003.fbx" id="23_x54vw"]
+[ext_resource type="PackedScene" uid="uid://c64f62ruehosx" path="res://assets/dungeon_models/exports/candle.fbx" id="24_56i23"]
+[ext_resource type="PackedScene" uid="uid://chyp68qdl3pe6" path="res://assets/dungeon_models/exports/chest bottom.fbx" id="25_75tck"]
+[ext_resource type="PackedScene" uid="uid://c8jkyyrkbyumx" path="res://assets/dungeon_models/exports/Coin.001.fbx" id="26_s8op7"]
+[ext_resource type="PackedScene" uid="uid://b5dbkm2khbken" path="res://assets/dungeon_models/exports/damaged railing left.fbx" id="27_g3qvx"]
+[ext_resource type="PackedScene" uid="uid://cpu8g7w28ggjm" path="res://assets/dungeon_models/exports/damaged railing right.fbx" id="28_f64hr"]
+[ext_resource type="PackedScene" uid="uid://qf0lt34ae2q8" path="res://assets/dungeon_models/exports/debris.fbx" id="29_efb6u"]
+[ext_resource type="PackedScene" uid="uid://cuca2w0hwiaig" path="res://assets/dungeon_models/exports/door arc.037.fbx" id="30_oviua"]
+[ext_resource type="PackedScene" uid="uid://dxgevn47gqkow" path="res://assets/dungeon_models/exports/door arc.038.fbx" id="31_p7cgg"]
+[ext_resource type="PackedScene" uid="uid://bn1q4ylf367e0" path="res://assets/dungeon_models/exports/door arc.fbx" id="32_sfnmp"]
+[ext_resource type="PackedScene" uid="uid://cdyxbecp75ada" path="res://assets/dungeon_models/exports/door.001.fbx" id="33_gwe68"]
+[ext_resource type="PackedScene" uid="uid://cr0mlaa055qow" path="res://assets/dungeon_models/exports/floor.001.fbx" id="34_4mlr0"]
+[ext_resource type="PackedScene" uid="uid://5357dp5gyys0" path="res://assets/dungeon_models/exports/floor.002.fbx" id="35_2j74b"]
+[ext_resource type="PackedScene" uid="uid://drniq7u3bu3hg" path="res://assets/dungeon_models/exports/floor.003.fbx" id="36_sx6ad"]
+[ext_resource type="PackedScene" uid="uid://b41ciq1r25pkx" path="res://assets/dungeon_models/exports/floor.004.fbx" id="37_2va30"]
+[ext_resource type="PackedScene" uid="uid://riymw6g7b0nx" path="res://assets/dungeon_models/exports/floor.005.fbx" id="38_2slmu"]
+[ext_resource type="PackedScene" uid="uid://cg14rqcnsl7ur" path="res://assets/dungeon_models/exports/floor.006.fbx" id="39_rucrm"]
+[ext_resource type="PackedScene" uid="uid://q1xqied8oend" path="res://assets/dungeon_models/exports/floor.007.fbx" id="40_0n87x"]
+[ext_resource type="PackedScene" uid="uid://jsudxsfmf2vi" path="res://assets/dungeon_models/exports/floor.008.fbx" id="41_doin7"]
+[ext_resource type="PackedScene" uid="uid://sytcn7vqtf1g" path="res://assets/dungeon_models/exports/floor.011.fbx" id="42_k5xjs"]
+[ext_resource type="PackedScene" uid="uid://bpo8sbtbq0q8p" path="res://assets/dungeon_models/exports/floor.012.fbx" id="43_0qfsr"]
+[ext_resource type="PackedScene" uid="uid://sih1iouvbee3" path="res://assets/dungeon_models/exports/floor.013.fbx" id="44_kawsc"]
+[ext_resource type="PackedScene" uid="uid://ceq4g5ij7u6j1" path="res://assets/dungeon_models/exports/floor.014.fbx" id="45_71600"]
+[ext_resource type="PackedScene" uid="uid://dd7hmjmavg2r3" path="res://assets/dungeon_models/exports/floor.015.fbx" id="46_5utly"]
+[ext_resource type="PackedScene" uid="uid://daqmalo0cn8x6" path="res://assets/dungeon_models/exports/floor.016.fbx" id="47_336r4"]
+[ext_resource type="PackedScene" uid="uid://3trntble2cil" path="res://assets/dungeon_models/exports/floor.017.fbx" id="48_qrujp"]
+[ext_resource type="PackedScene" uid="uid://brd7dugtgn3vy" path="res://assets/dungeon_models/exports/floor.018.fbx" id="49_moldn"]
+[ext_resource type="PackedScene" uid="uid://jovgoytp1xc1" path="res://assets/dungeon_models/exports/floor.029.fbx" id="50_7rvy2"]
+[ext_resource type="PackedScene" uid="uid://vi454oui3ld5" path="res://assets/dungeon_models/exports/floor.030.fbx" id="51_nfal1"]
+[ext_resource type="PackedScene" uid="uid://becjtlatjcitb" path="res://assets/dungeon_models/exports/floor.031.fbx" id="52_16bu1"]
+[ext_resource type="PackedScene" uid="uid://cjp0ddyv4amih" path="res://assets/dungeon_models/exports/floor.032.fbx" id="53_s07e7"]
+[ext_resource type="PackedScene" uid="uid://cbe8w30s0xemr" path="res://assets/dungeon_models/exports/floor.033.fbx" id="54_fp24m"]
+[ext_resource type="PackedScene" uid="uid://hycqhxi8kumq" path="res://assets/dungeon_models/exports/floor.034.fbx" id="55_ygi4v"]
+[ext_resource type="PackedScene" uid="uid://dvb67k7ab8x6e" path="res://assets/dungeon_models/exports/floor.035.fbx" id="56_tqh2m"]
+[ext_resource type="PackedScene" uid="uid://bvk24ygr7q2dg" path="res://assets/dungeon_models/exports/floor.036.fbx" id="57_i71gp"]
+[ext_resource type="PackedScene" uid="uid://cb635hqju40du" path="res://assets/dungeon_models/exports/floor.037.fbx" id="58_ntpvq"]
+[ext_resource type="PackedScene" uid="uid://b5jnsc220qf8d" path="res://assets/dungeon_models/exports/floor.038.fbx" id="59_ydhsm"]
+[ext_resource type="PackedScene" uid="uid://d2r65hq7gqal5" path="res://assets/dungeon_models/exports/floor.039.fbx" id="60_f6jci"]
+[ext_resource type="PackedScene" uid="uid://cnhnuujqiw5p3" path="res://assets/dungeon_models/exports/floor.041.fbx" id="61_mfi6x"]
+[ext_resource type="PackedScene" uid="uid://dxln4cwaa31bi" path="res://assets/dungeon_models/exports/floor.043.fbx" id="62_5dlug"]
+[ext_resource type="PackedScene" uid="uid://ddp5ixgvic3vr" path="res://assets/dungeon_models/exports/floor.044.fbx" id="63_0yngq"]
+[ext_resource type="PackedScene" uid="uid://bm7olmky5tj0w" path="res://assets/dungeon_models/exports/floor.045.fbx" id="64_s67mx"]
+[ext_resource type="PackedScene" uid="uid://c425a1p5g28v3" path="res://assets/dungeon_models/exports/floor.046.fbx" id="65_vnrtd"]
+[ext_resource type="PackedScene" uid="uid://bobwx2r54bwrk" path="res://assets/dungeon_models/exports/floor.047.fbx" id="66_g28gx"]
+[ext_resource type="PackedScene" uid="uid://dodme00tmc0t5" path="res://assets/dungeon_models/exports/floor.048.fbx" id="67_cri7t"]
+[ext_resource type="PackedScene" uid="uid://b4y2eu7upakp0" path="res://assets/dungeon_models/exports/floor.049.fbx" id="68_ahvtc"]
+[ext_resource type="PackedScene" uid="uid://dx4wm7dqym7e6" path="res://assets/dungeon_models/exports/floor.050.fbx" id="69_4465h"]
+[ext_resource type="PackedScene" uid="uid://bqhv5r8yy05cd" path="res://assets/dungeon_models/exports/floor.051.fbx" id="70_hycwb"]
+[ext_resource type="PackedScene" uid="uid://bl865emf7gl8a" path="res://assets/dungeon_models/exports/floor.052.fbx" id="71_1finv"]
+[ext_resource type="PackedScene" uid="uid://c6s47ixon2pal" path="res://assets/dungeon_models/exports/floor.063.fbx" id="72_ghg6d"]
+[ext_resource type="PackedScene" uid="uid://uycucw2fotss" path="res://assets/dungeon_models/exports/floor.064.fbx" id="73_b7w7e"]
+[ext_resource type="PackedScene" uid="uid://dvay4yqcqcnur" path="res://assets/dungeon_models/exports/floor.065.fbx" id="74_2pjav"]
+[ext_resource type="PackedScene" uid="uid://b27vwwl0nhs0s" path="res://assets/dungeon_models/exports/floor.066.fbx" id="75_npldc"]
+[ext_resource type="PackedScene" uid="uid://bmcfpiaknp4ol" path="res://assets/dungeon_models/exports/floor.067.fbx" id="76_1ajmu"]
+[ext_resource type="PackedScene" uid="uid://bs7lkgtu5k2lv" path="res://assets/dungeon_models/exports/floor.070.fbx" id="77_ofb03"]
+[ext_resource type="PackedScene" uid="uid://cku5e5nfx401j" path="res://assets/dungeon_models/exports/floor.072.fbx" id="78_ymhym"]
+[ext_resource type="PackedScene" uid="uid://ds21blbi8df80" path="res://assets/dungeon_models/exports/floor.074.fbx" id="79_t06ts"]
+[ext_resource type="PackedScene" uid="uid://v3p8or76xh82" path="res://assets/dungeon_models/exports/floor.092.fbx" id="80_janet"]
+[ext_resource type="PackedScene" uid="uid://coel55t081brq" path="res://assets/dungeon_models/exports/floor.107.fbx" id="81_qu6wy"]
+[ext_resource type="PackedScene" uid="uid://swq75pvv8j4m" path="res://assets/dungeon_models/exports/floor.331.fbx" id="82_c4vof"]
+[ext_resource type="PackedScene" uid="uid://bde8q1n635ua0" path="res://assets/dungeon_models/exports/floor.332.fbx" id="83_3c1a1"]
+[ext_resource type="PackedScene" uid="uid://2k14jmryuiaw" path="res://assets/dungeon_models/exports/floor.335.fbx" id="84_21r0g"]
+[ext_resource type="PackedScene" uid="uid://dni8f8xrjya2d" path="res://assets/dungeon_models/exports/floor.336.fbx" id="85_bjdsg"]
+[ext_resource type="PackedScene" uid="uid://bgpbekl2vbdys" path="res://assets/dungeon_models/exports/floor.338.fbx" id="86_f5pt0"]
+[ext_resource type="PackedScene" uid="uid://dk56xmn5ngdfp" path="res://assets/dungeon_models/exports/floor.341.fbx" id="87_53tck"]
+[ext_resource type="PackedScene" uid="uid://fway4kyn3myb" path="res://assets/dungeon_models/exports/floor.349.fbx" id="88_gn0np"]
+[ext_resource type="PackedScene" uid="uid://sqxmrin5nw7u" path="res://assets/dungeon_models/exports/floor.364.fbx" id="89_yf3qc"]
+[ext_resource type="PackedScene" uid="uid://b8ciq2n22cn6p" path="res://assets/dungeon_models/exports/floor.365.fbx" id="90_tdd3d"]
+[ext_resource type="PackedScene" uid="uid://dilvfiqnm82ww" path="res://assets/dungeon_models/exports/floor.366.fbx" id="91_ena06"]
+[ext_resource type="PackedScene" uid="uid://mkfj5evubw00" path="res://assets/dungeon_models/exports/floor.367.fbx" id="92_23ytg"]
+[ext_resource type="PackedScene" uid="uid://cl3xsfogb5nxm" path="res://assets/dungeon_models/exports/floor.368.fbx" id="93_jv1kx"]
+[ext_resource type="PackedScene" uid="uid://36g3fb4il8hp" path="res://assets/dungeon_models/exports/floor.369.fbx" id="94_jx7vd"]
+[ext_resource type="PackedScene" uid="uid://dmjauh71pao15" path="res://assets/dungeon_models/exports/floor.370.fbx" id="95_isg2b"]
+[ext_resource type="PackedScene" uid="uid://waagv2pp34a3" path="res://assets/dungeon_models/exports/floor.371.fbx" id="96_mhsi0"]
+[ext_resource type="PackedScene" uid="uid://cm8jvfixn1wx0" path="res://assets/dungeon_models/exports/floor.372.fbx" id="97_5b8xw"]
+[ext_resource type="PackedScene" uid="uid://cvqwc1n64ejnl" path="res://assets/dungeon_models/exports/floor.373.fbx" id="98_8ompf"]
+[ext_resource type="PackedScene" uid="uid://cp4ukkhp5fg5w" path="res://assets/dungeon_models/exports/floor.374.fbx" id="99_cf0nl"]
+[ext_resource type="PackedScene" uid="uid://77ak5dbdm165" path="res://assets/dungeon_models/exports/floor.375.fbx" id="100_jqhvr"]
+[ext_resource type="PackedScene" uid="uid://bnixc0xo6gpp4" path="res://assets/dungeon_models/exports/floor.376.fbx" id="101_uk7lp"]
+[ext_resource type="PackedScene" uid="uid://cbfdvnhksh1tr" path="res://assets/dungeon_models/exports/floor.377.fbx" id="102_hc80u"]
+[ext_resource type="PackedScene" uid="uid://b1kuesnn6q0ad" path="res://assets/dungeon_models/exports/floor.378.fbx" id="103_havd7"]
+[ext_resource type="PackedScene" uid="uid://bsiak3fe1rhsc" path="res://assets/dungeon_models/exports/floor.379.fbx" id="104_rac8q"]
+[ext_resource type="PackedScene" uid="uid://d0vf5fxd1586r" path="res://assets/dungeon_models/exports/floor.380.fbx" id="105_mqpm2"]
+[ext_resource type="PackedScene" uid="uid://pkq0ro07vle6" path="res://assets/dungeon_models/exports/floor.381.fbx" id="106_s27df"]
+[ext_resource type="PackedScene" uid="uid://d2ieekna7rah7" path="res://assets/dungeon_models/exports/floor.382.fbx" id="107_jjw30"]
+[ext_resource type="PackedScene" uid="uid://bwpmhj0lgvpe7" path="res://assets/dungeon_models/exports/floor.383.fbx" id="108_kfq8y"]
+[ext_resource type="PackedScene" uid="uid://hlwl63daero5" path="res://assets/dungeon_models/exports/floor.384.fbx" id="109_cuenr"]
+[ext_resource type="PackedScene" uid="uid://du6muemguh0b3" path="res://assets/dungeon_models/exports/floor.385.fbx" id="110_0utbf"]
+[ext_resource type="PackedScene" uid="uid://c2fo58lewqbym" path="res://assets/dungeon_models/exports/floor.386.fbx" id="111_frc6j"]
+[ext_resource type="PackedScene" uid="uid://7lxdq24aem7c" path="res://assets/dungeon_models/exports/floor.387.fbx" id="112_q2v3n"]
+[ext_resource type="PackedScene" uid="uid://bistswueqykjj" path="res://assets/dungeon_models/exports/floor.388.fbx" id="113_x2b6d"]
+[ext_resource type="PackedScene" uid="uid://cy7gtnxpgwiku" path="res://assets/dungeon_models/exports/floor.389.fbx" id="114_duoa6"]
+[ext_resource type="PackedScene" uid="uid://ce0oabs3412ua" path="res://assets/dungeon_models/exports/floor.390.fbx" id="115_8jkif"]
+[ext_resource type="PackedScene" uid="uid://bf5fnvtghqg52" path="res://assets/dungeon_models/exports/floor.391.fbx" id="116_35f3r"]
+[ext_resource type="PackedScene" uid="uid://ba3udaooxku4c" path="res://assets/dungeon_models/exports/floor.fbx" id="117_fa366"]
+[ext_resource type="PackedScene" uid="uid://tdhghhqse7tq" path="res://assets/dungeon_models/exports/Key.001.fbx" id="118_3l2b0"]
+[ext_resource type="PackedScene" uid="uid://84pnu34q0bcf" path="res://assets/dungeon_models/exports/lever base.fbx" id="119_jx26u"]
+[ext_resource type="PackedScene" uid="uid://bqom828xoxyek" path="res://assets/dungeon_models/exports/pillar.fbx" id="120_2cgps"]
+[ext_resource type="PackedScene" uid="uid://dob11qe3p0tqk" path="res://assets/dungeon_models/exports/railing.fbx" id="121_2dg1u"]
+[ext_resource type="PackedScene" uid="uid://b37snfvhh3ycc" path="res://assets/dungeon_models/exports/rock.001.fbx" id="122_2r1ju"]
+[ext_resource type="PackedScene" uid="uid://nbx8o0g0no1u" path="res://assets/dungeon_models/exports/rock.002.fbx" id="123_81apo"]
+[ext_resource type="PackedScene" uid="uid://coswsem3a5vkm" path="res://assets/dungeon_models/exports/rock.003.fbx" id="124_4so6u"]
+[ext_resource type="PackedScene" uid="uid://dbhfcsdo74u6t" path="res://assets/dungeon_models/exports/rock.fbx" id="125_8vlbp"]
+[ext_resource type="PackedScene" uid="uid://dkolgcim8u74v" path="res://assets/dungeon_models/exports/ruined wall.fbx" id="126_iwh53"]
+[ext_resource type="PackedScene" uid="uid://bmwxu83n3bp60" path="res://assets/dungeon_models/exports/saw blade floor.fbx" id="127_ocawp"]
+[ext_resource type="PackedScene" uid="uid://6kcnftake567" path="res://assets/dungeon_models/exports/skull.fbx" id="128_bidd8"]
+[ext_resource type="PackedScene" uid="uid://dx1gh71ryfpbs" path="res://assets/dungeon_models/exports/smooth wall.001.fbx" id="129_0evfp"]
+[ext_resource type="PackedScene" uid="uid://knpofig6ing3" path="res://assets/dungeon_models/exports/smooth wall.002.fbx" id="130_bj5tq"]
+[ext_resource type="PackedScene" uid="uid://ciqku4462k3ya" path="res://assets/dungeon_models/exports/smooth wall.003.fbx" id="131_14uw5"]
+[ext_resource type="PackedScene" uid="uid://b303vmhh7d25u" path="res://assets/dungeon_models/exports/smooth wall.004.fbx" id="132_ujlqf"]
+[ext_resource type="PackedScene" uid="uid://djf8o1syrlabx" path="res://assets/dungeon_models/exports/smooth wall.fbx" id="133_vflb4"]
+[ext_resource type="PackedScene" uid="uid://dspvxdvfguwgb" path="res://assets/dungeon_models/exports/spikes floor.fbx" id="134_4vph8"]
+[ext_resource type="PackedScene" uid="uid://bd0h4n2rbgb3m" path="res://assets/dungeon_models/exports/spikes.fbx" id="135_ubnrq"]
+[ext_resource type="PackedScene" uid="uid://cvtgahp4p3bkw" path="res://assets/dungeon_models/exports/stairs handhail big.fbx" id="136_ln470"]
+[ext_resource type="PackedScene" uid="uid://bnbgsvltbnchv" path="res://assets/dungeon_models/exports/stairs handhail small.fbx" id="137_t1ksv"]
+[ext_resource type="PackedScene" uid="uid://c586ebgbb6b3j" path="res://assets/dungeon_models/exports/stairs.001.fbx" id="138_eelpl"]
+[ext_resource type="PackedScene" uid="uid://bda2fxym3i0j3" path="res://assets/dungeon_models/exports/stairs.002.fbx" id="139_l3b7l"]
+[ext_resource type="PackedScene" uid="uid://dt3ne64ua4tn2" path="res://assets/dungeon_models/exports/stairs.003.fbx" id="140_5i0k2"]
+[ext_resource type="PackedScene" uid="uid://ctwafy14871eh" path="res://assets/dungeon_models/exports/stairs.fbx" id="141_3t26i"]
+[ext_resource type="PackedScene" uid="uid://bngjll1umcrwl" path="res://assets/dungeon_models/exports/tile.001.fbx" id="142_513k1"]
+[ext_resource type="PackedScene" uid="uid://dtao0a10eg27m" path="res://assets/dungeon_models/exports/tile.002.fbx" id="143_qn85r"]
+[ext_resource type="PackedScene" uid="uid://cd328j3ue0avd" path="res://assets/dungeon_models/exports/tile.003.fbx" id="144_47uve"]
+[ext_resource type="PackedScene" uid="uid://de7q6unb3ltwm" path="res://assets/dungeon_models/exports/tile.004.fbx" id="145_mcc1t"]
+[ext_resource type="PackedScene" uid="uid://dmbc6kcas3lmc" path="res://assets/dungeon_models/exports/tile.005.fbx" id="146_xhqlk"]
+[ext_resource type="PackedScene" uid="uid://cvh2mq8dwlkhh" path="res://assets/dungeon_models/exports/tile.fbx" id="147_gw0po"]
+[ext_resource type="PackedScene" uid="uid://bk777mqykfpa6" path="res://assets/dungeon_models/exports/torch.001.fbx" id="148_w1133"]
+[ext_resource type="PackedScene" uid="uid://b31ym6lcusvo1" path="res://assets/dungeon_models/exports/torch.fbx" id="149_s0sy1"]
+[ext_resource type="PackedScene" uid="uid://c0jicuxycjfbh" path="res://assets/dungeon_models/exports/window.001.fbx" id="150_abbfa"]
+[ext_resource type="PackedScene" uid="uid://b5gi340q7p4hj" path="res://assets/dungeon_models/exports/window.002.fbx" id="151_jfwqb"]
+[ext_resource type="PackedScene" uid="uid://b8d63pxk3pymr" path="res://assets/dungeon_models/exports/window.fbx" id="152_lm5vn"]
+[ext_resource type="PackedScene" uid="uid://cmp2ohtd1ml4r" path="res://assets/dungeon_models/exports/wooden box.001.fbx" id="153_nhji5"]
+[ext_resource type="PackedScene" uid="uid://chcyy638t1r1b" path="res://assets/dungeon_models/exports/wooden box.fbx" id="154_bipl5"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="barrel_015" parent="." instance=ExtResource("1_ell1y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6)
+
+[node name="barrel" parent="." instance=ExtResource("2_tqg3m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -7)
+
+[node name="bars_001" parent="." instance=ExtResource("3_maubd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -3)
+
+[node name="blade trap base" parent="." instance=ExtResource("4_egjvq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -14)
+
+[node name="bone" parent="." instance=ExtResource("5_2cdq0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -18)
+
+[node name="brick wall with bars_001" parent="." instance=ExtResource("6_0sgux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 12)
+
+[node name="brick wall with bars" parent="." instance=ExtResource("7_mt4gu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 12)
+
+[node name="brick wall with door_001" parent="." instance=ExtResource("8_pubo4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9)
+
+[node name="brick wall with door" parent="." instance=ExtResource("9_hlq3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 9)
+
+[node name="brick wall without door_001" parent="." instance=ExtResource("10_qqsnm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 9)
+
+[node name="brick wall without door" parent="." instance=ExtResource("11_gfhlq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 9)
+
+[node name="brick wall_001" parent="." instance=ExtResource("12_qwkhp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 1)
+
+[node name="brick wall_002" parent="." instance=ExtResource("13_aser2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 7)
+
+[node name="brick wall_003" parent="." instance=ExtResource("14_l3v7l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 7)
+
+[node name="brick wall_004" parent="." instance=ExtResource("15_juv8m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 7)
+
+[node name="brick wall_005" parent="." instance=ExtResource("16_t36m7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 1)
+
+[node name="brick wall" parent="." instance=ExtResource("17_o0ade")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 7)
+
+[node name="brick" parent="." instance=ExtResource("18_xrufs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0, -15)
+
+[node name="bricks_001" parent="." instance=ExtResource("19_vr4tv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -14)
+
+[node name="bricks" parent="." instance=ExtResource("20_ogcag")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -14)
+
+[node name="candle_001" parent="." instance=ExtResource("21_tugx3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="candle_002" parent="." instance=ExtResource("22_leiul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="candle_003" parent="." instance=ExtResource("23_x54vw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="candle" parent="." instance=ExtResource("24_56i23")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="chest bottom" parent="." instance=ExtResource("25_75tck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6)
+
+[node name="Coin_001" parent="." instance=ExtResource("26_s8op7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5)
+
+[node name="damaged railing left" parent="." instance=ExtResource("27_g3qvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -19)
+
+[node name="damaged railing right" parent="." instance=ExtResource("28_f64hr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -14)
+
+[node name="debris" parent="." instance=ExtResource("29_efb6u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 0, -14)
+
+[node name="door arc_037" parent="." instance=ExtResource("30_oviua")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, 13)
+
+[node name="door arc_038" parent="." instance=ExtResource("31_p7cgg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 12)
+
+[node name="door arc" parent="." instance=ExtResource("32_sfnmp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 11)
+
+[node name="door_001" parent="." instance=ExtResource("33_gwe68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -3)
+
+[node name="floor_001" parent="." instance=ExtResource("34_4mlr0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -3)
+
+[node name="floor_002" parent="." instance=ExtResource("35_2j74b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -3)
+
+[node name="floor_003" parent="." instance=ExtResource("36_sx6ad")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -3)
+
+[node name="floor_004" parent="." instance=ExtResource("37_2va30")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 0)
+
+[node name="floor_005" parent="." instance=ExtResource("38_2slmu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 0)
+
+[node name="floor_009" parent="." instance=ExtResource("38_2slmu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 0)
+
+[node name="floor_006" parent="." instance=ExtResource("39_rucrm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, 0)
+
+[node name="floor_007" parent="." instance=ExtResource("40_0n87x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 3)
+
+[node name="floor_008" parent="." instance=ExtResource("41_doin7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, 3)
+
+[node name="floor_011" parent="." instance=ExtResource("42_k5xjs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -9)
+
+[node name="floor_012" parent="." instance=ExtResource("43_0qfsr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -11)
+
+[node name="floor_013" parent="." instance=ExtResource("44_kawsc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -5)
+
+[node name="floor_014" parent="." instance=ExtResource("45_71600")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -7)
+
+[node name="floor_015" parent="." instance=ExtResource("46_5utly")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, -11)
+
+[node name="floor_016" parent="." instance=ExtResource("47_336r4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -9)
+
+[node name="floor_017" parent="." instance=ExtResource("48_qrujp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0, -5)
+
+[node name="floor_018" parent="." instance=ExtResource("49_moldn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -7)
+
+[node name="floor_029" parent="." instance=ExtResource("50_7rvy2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -5)
+
+[node name="floor_030" parent="." instance=ExtResource("51_nfal1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -7)
+
+[node name="floor_031" parent="." instance=ExtResource("52_16bu1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -11)
+
+[node name="floor_032" parent="." instance=ExtResource("53_s07e7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -9)
+
+[node name="floor_033" parent="." instance=ExtResource("54_fp24m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -5)
+
+[node name="floor_034" parent="." instance=ExtResource("55_ygi4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -5)
+
+[node name="floor_035" parent="." instance=ExtResource("56_tqh2m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -11)
+
+[node name="floor_036" parent="." instance=ExtResource("57_i71gp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -11)
+
+[node name="floor_037" parent="." instance=ExtResource("58_ntpvq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -5)
+
+[node name="floor_038" parent="." instance=ExtResource("59_ydhsm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -11)
+
+[node name="floor_039" parent="." instance=ExtResource("60_f6jci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, -5)
+
+[node name="floor_041" parent="." instance=ExtResource("61_mfi6x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -9)
+
+[node name="floor_043" parent="." instance=ExtResource("62_5dlug")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -11)
+
+[node name="floor_044" parent="." instance=ExtResource("63_0yngq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -7)
+
+[node name="floor_045" parent="." instance=ExtResource("64_s67mx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -10)
+
+[node name="floor_046" parent="." instance=ExtResource("65_vnrtd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -16)
+
+[node name="floor_047" parent="." instance=ExtResource("66_g28gx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -18)
+
+[node name="floor_048" parent="." instance=ExtResource("67_cri7t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -12)
+
+[node name="floor_049" parent="." instance=ExtResource("68_ahvtc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -14)
+
+[node name="floor_050" parent="." instance=ExtResource("69_4465h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -8)
+
+[node name="floor_051" parent="." instance=ExtResource("70_hycwb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -12)
+
+[node name="floor_052" parent="." instance=ExtResource("71_1finv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14)
+
+[node name="floor_063" parent="." instance=ExtResource("72_ghg6d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, -12)
+
+[node name="floor_064" parent="." instance=ExtResource("73_b7w7e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, -12)
+
+[node name="floor_065" parent="." instance=ExtResource("74_2pjav")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -18)
+
+[node name="floor_066" parent="." instance=ExtResource("75_npldc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -14)
+
+[node name="floor_067" parent="." instance=ExtResource("76_1ajmu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, -8)
+
+[node name="floor_070" parent="." instance=ExtResource("77_ofb03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -12)
+
+[node name="floor_072" parent="." instance=ExtResource("78_ymhym")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -10)
+
+[node name="floor_074" parent="." instance=ExtResource("79_t06ts")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+
+[node name="floor_092" parent="." instance=ExtResource("80_janet")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -17)
+
+[node name="floor_107" parent="." instance=ExtResource("81_qu6wy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0, -12)
+
+[node name="floor_331" parent="." instance=ExtResource("82_c4vof")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -7)
+
+[node name="floor_332" parent="." instance=ExtResource("83_3c1a1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -5)
+
+[node name="floor_335" parent="." instance=ExtResource("84_21r0g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -3)
+
+[node name="floor_336" parent="." instance=ExtResource("85_bjdsg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -9)
+
+[node name="floor_338" parent="." instance=ExtResource("86_f5pt0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -3)
+
+[node name="floor_341" parent="." instance=ExtResource("87_53tck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -9)
+
+[node name="floor_349" parent="." instance=ExtResource("88_gn0np")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -5)
+
+[node name="floor_364" parent="." instance=ExtResource("89_yf3qc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -7)
+
+[node name="floor_365" parent="." instance=ExtResource("90_tdd3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -7)
+
+[node name="floor_366" parent="." instance=ExtResource("91_ena06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -9)
+
+[node name="floor_367" parent="." instance=ExtResource("92_23ytg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -5)
+
+[node name="floor_368" parent="." instance=ExtResource("93_jv1kx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -7)
+
+[node name="floor_369" parent="." instance=ExtResource("94_jx7vd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -9)
+
+[node name="floor_370" parent="." instance=ExtResource("95_isg2b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -5)
+
+[node name="floor_371" parent="." instance=ExtResource("96_mhsi0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -7)
+
+[node name="floor_372" parent="." instance=ExtResource("97_5b8xw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -9)
+
+[node name="floor_373" parent="." instance=ExtResource("98_8ompf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, -5)
+
+[node name="floor_374" parent="." instance=ExtResource("99_cf0nl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4)
+
+[node name="floor_375" parent="." instance=ExtResource("100_jqhvr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4)
+
+[node name="floor_376" parent="." instance=ExtResource("101_uk7lp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 10)
+
+[node name="floor_377" parent="." instance=ExtResource("102_hc80u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 6)
+
+[node name="floor_378" parent="." instance=ExtResource("103_havd7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 10)
+
+[node name="floor_379" parent="." instance=ExtResource("104_rac8q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 4)
+
+[node name="floor_380" parent="." instance=ExtResource("105_mqpm2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 8)
+
+[node name="floor_381" parent="." instance=ExtResource("106_s27df")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 6)
+
+[node name="floor_382" parent="." instance=ExtResource("107_jjw30")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 6)
+
+[node name="floor_383" parent="." instance=ExtResource("108_kfq8y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 6)
+
+[node name="floor_384" parent="." instance=ExtResource("109_cuenr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 8)
+
+[node name="floor_385" parent="." instance=ExtResource("110_0utbf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 6)
+
+[node name="floor_386" parent="." instance=ExtResource("111_frc6j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 8)
+
+[node name="floor_387" parent="." instance=ExtResource("112_q2v3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 6)
+
+[node name="floor_388" parent="." instance=ExtResource("113_x2b6d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 4)
+
+[node name="floor_389" parent="." instance=ExtResource("114_duoa6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0, 10)
+
+[node name="floor_390" parent="." instance=ExtResource("115_8jkif")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="floor_391" parent="." instance=ExtResource("116_35f3r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0, 8)
+
+[node name="floor" parent="." instance=ExtResource("117_fa366")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="Key_001" parent="." instance=ExtResource("118_3l2b0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -5)
+
+[node name="lever base" parent="." instance=ExtResource("119_jx26u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -14)
+
+[node name="pillar" parent="." instance=ExtResource("120_2cgps")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -3)
+
+[node name="railing" parent="." instance=ExtResource("121_2dg1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -16)
+
+[node name="rock_001" parent="." instance=ExtResource("122_2r1ju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -16)
+
+[node name="rock_002" parent="." instance=ExtResource("123_81apo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -14)
+
+[node name="rock_003" parent="." instance=ExtResource("124_4so6u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -14)
+
+[node name="rock" parent="." instance=ExtResource("125_8vlbp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -14)
+
+[node name="ruined wall" parent="." instance=ExtResource("126_iwh53")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 9)
+
+[node name="saw blade floor" parent="." instance=ExtResource("127_ocawp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 12)
+
+[node name="skull" parent="." instance=ExtResource("128_bidd8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29, 0, -16)
+
+[node name="smooth wall_001" parent="." instance=ExtResource("129_0evfp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 4)
+
+[node name="smooth wall_002" parent="." instance=ExtResource("130_bj5tq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 7)
+
+[node name="smooth wall_003" parent="." instance=ExtResource("131_14uw5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 7)
+
+[node name="smooth wall_004" parent="." instance=ExtResource("132_ujlqf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 4)
+
+[node name="smooth wall" parent="." instance=ExtResource("133_vflb4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 7)
+
+[node name="spikes floor" parent="." instance=ExtResource("134_4vph8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="spikes" parent="." instance=ExtResource("135_ubnrq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="stairs handhail big" parent="." instance=ExtResource("136_ln470")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="stairs handhail small" parent="." instance=ExtResource("137_t1ksv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="stairs_001" parent="." instance=ExtResource("138_eelpl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+
+[node name="stairs_002" parent="." instance=ExtResource("139_l3b7l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3)
+
+[node name="stairs_003" parent="." instance=ExtResource("140_5i0k2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0)
+
+[node name="stairs" parent="." instance=ExtResource("141_3t26i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+
+[node name="tile_001" parent="." instance=ExtResource("142_513k1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="tile_002" parent="." instance=ExtResource("143_qn85r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="tile_003" parent="." instance=ExtResource("144_47uve")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="tile_004" parent="." instance=ExtResource("145_mcc1t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="tile_005" parent="." instance=ExtResource("146_xhqlk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="tile" parent="." instance=ExtResource("147_gw0po")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+
+[node name="torch_001" parent="." instance=ExtResource("148_w1133")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, -17)
+
+[node name="torch" parent="." instance=ExtResource("149_s0sy1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, -17)
+
+[node name="window_001" parent="." instance=ExtResource("150_abbfa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 7)
+
+[node name="window_002" parent="." instance=ExtResource("151_jfwqb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, -3)
+
+[node name="window" parent="." instance=ExtResource("152_lm5vn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 7)
+
+[node name="wooden box_001" parent="." instance=ExtResource("153_nhji5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, -14)
+
+[node name="wooden box" parent="." instance=ExtResource("154_bipl5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27, 0, -12)

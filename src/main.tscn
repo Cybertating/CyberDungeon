@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://djudqismlvagt"]
 
-[ext_resource type="PackedScene" uid="uid://dlkyqmhh5yfpr" path="res://assets/low poly dungeon sample.fbx" id="1_eewff"]
+[ext_resource type="PackedScene" uid="uid://dlkyqmhh5yfpr" path="res://assets/dungeon_models/low poly dungeon sample.fbx" id="1_eewff"]
 
 [node name="Main" type="Node3D"]
 
