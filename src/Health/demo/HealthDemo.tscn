@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnjpjpvr5ty3o"]
+
+[ext_resource type="PackedScene" uid="uid://bf1mjhgywe28e" path="res://src/demo/DemoBasis.tscn" id="1_qh2a6"]
+[ext_resource type="PackedScene" uid="uid://dw7p5dub5c3vo" path="res://src/traps/Spikes/Spikes.tscn" id="2_7jv78"]
+
+[node name="HealthDemo" type="Node3D"]
+
+[node name="DemoBasis" parent="." instance=ExtResource("1_qh2a6")]
+
+[node name="Spikes" parent="." instance=ExtResource("2_7jv78")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.05518, 0.184453, -4.5917)
