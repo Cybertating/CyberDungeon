@@ -1,0 +1,124 @@
+[gd_scene load_steps=9 format=3 uid="uid://ipq5fkh5hdgq"]
+
+[ext_resource type="PackedScene" uid="uid://8ammufvf0lu7" path="res://assets/dungeon_models/exports/barrel.015.fbx" id="1_ranyi"]
+[ext_resource type="PackedScene" uid="uid://foxrrw6j1ml5" path="res://assets/dungeon_models/exports/barrel.fbx" id="2_ed4q3"]
+[ext_resource type="PackedScene" uid="uid://caupj6niwstss" path="res://assets/dungeon_models/exports/brick wall.001.fbx" id="4_vu0lc"]
+[ext_resource type="PackedScene" uid="uid://cr0mlaa055qow" path="res://assets/dungeon_models/exports/floor.001.fbx" id="5_mobsb"]
+[ext_resource type="PackedScene" uid="uid://dgoo0cqkysq64" path="res://assets/dungeon_rooms/common_assets/torch.tscn" id="6_6wiol"]
+[ext_resource type="PackedScene" uid="uid://chcyy638t1r1b" path="res://assets/dungeon_models/exports/wooden box.fbx" id="7_dkpy5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6wiol"]
+size = Vector3(6, 2.9, 0.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ranyi"]
+size = Vector3(6, 0.25, 6)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="barrel_016" parent="." instance=ExtResource("1_ranyi")]
+transform = Transform3D(-0.100431, 0, -0.994944, 0, 1, 0, 0.994944, 0, -0.100431, 1.55132, 0.24452, -0.26824)
+
+[node name="barrel2" parent="." instance=ExtResource("2_ed4q3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.98294, 0.256108, -1.85707)
+
+[node name="barrel3" parent="." instance=ExtResource("2_ed4q3")]
+transform = Transform3D(0.900317, -6.76499e-05, 0.435235, 0.000277283, 1, -0.000418119, -0.435235, 0.000497125, 0.900317, -0.427895, 0.256108, -1.35341)
+
+[node name="barrel4" parent="." instance=ExtResource("2_ed4q3")]
+transform = Transform3D(0.908567, 0, 0.41774, 0, 1, 0, -0.41774, 0, 0.908567, -1.76171, 0.256108, -0.148766)
+
+[node name="barrel5" parent="." instance=ExtResource("2_ed4q3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.76411, 0.256108, -1.8935)
+
+[node name="wooden box2" parent="." instance=ExtResource("7_dkpy5")]
+transform = Transform3D(0.947768, 0, 0.318959, 0, 1, 0, -0.318959, 0, 0.947768, -0.616266, 0.287275, 0.17676)
+
+[node name="wooden box4" parent="." instance=ExtResource("7_dkpy5")]
+transform = Transform3D(0.979785, 0, -0.200052, 0, 1, 0, 0.200052, 0, 0.979785, 0.58252, 0.287275, -2.10878)
+
+[node name="wooden box3" parent="." instance=ExtResource("7_dkpy5")]
+transform = Transform3D(0.901236, 0, -0.433329, 0, 1, 0, 0.433329, 0, 0.901236, -2.10644, 0.287275, 0.97575)
+
+[node name="wall_001" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+
+[node name="brick wall_001" parent="wall_001" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="brick wall_002" parent="wall_001" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="brick wall_003" parent="wall_001" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_001"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_6wiol")
+
+[node name="wall_002" type="StaticBody3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, 0)
+
+[node name="brick wall_001" parent="wall_002" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="brick wall_002" parent="wall_002" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="brick wall_003" parent="wall_002" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_002"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_6wiol")
+
+[node name="wall_003" type="StaticBody3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3, 0, 0)
+
+[node name="brick wall_001" parent="wall_003" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="brick wall_002" parent="wall_003" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="brick wall_003" parent="wall_003" instance=ExtResource("4_vu0lc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_003"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_6wiol")
+
+[node name="floor_001" type="StaticBody3D" parent="."]
+
+[node name="floor_010" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -3)
+
+[node name="floor_019" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3)
+
+[node name="floor_020" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
+
+[node name="floor_021" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
+
+[node name="floor_022" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 1)
+
+[node name="floor_023" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
+
+[node name="floor_024" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+
+[node name="floor_025" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+
+[node name="floor_026" parent="floor_001" instance=ExtResource("5_mobsb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_001"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.164582, 0)
+shape = SubResource("BoxShape3D_ranyi")
+
+[node name="Torch" parent="." instance=ExtResource("6_6wiol")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -2.841)

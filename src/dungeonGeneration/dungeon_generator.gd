@@ -1,7 +1,7 @@
 extends Node3D
 
 const OPPOSITES := [2,3,0,1]
-const CHUNK_SIZE := 10
+const CHUNK_SIZE := 6
 
 func spawn_room(room: Room, room_location: Vector2i, rotation_angle: int):
 	var instance = room.room_file.instantiate()
@@ -89,5 +89,5 @@ func generate_dungeon(size: int, rooms: Array[Room]):
 
 
 func _ready() -> void:
-	var rooms = Util.load_rooms_from_json("res://assets/dungeonPlaceholders/rooms.json")
+	var rooms = Util.load_rooms_from_json("res://assets/dungeon_rooms/dungeon.json")
 	generate_dungeon(100, rooms)

@@ -1,0 +1,112 @@
+[
+	{
+		"id": 0,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_end_001.tscn",
+		"isDeadEnd": true,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 4 },
+	  ]
+	},
+	{
+		"id": 1,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_end_002.tscn",
+		"isDeadEnd": true,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 4 },
+	  ]
+	},
+	{
+		"id": 2,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_end_002.tscn",
+		"isDeadEnd": true,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 4 },
+	  ]
+	},
+	
+	{
+		"id": 3,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_corridor_001.tscn",
+		"isDeadEnd": false,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 10 },
+	  ]
+	},
+	{
+		"id": 4,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_corridor_002.tscn",
+		"isDeadEnd": false,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 10 },
+	  ]
+	},
+	{
+		"id": 5,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_corridor_003.tscn",
+		"isDeadEnd": false,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 10 },
+	  ]
+	},
+	{
+		"id": 6,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_turn_001.tscn",
+		"isDeadEnd": false,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 6 },
+	  ]
+	},
+	{
+		"id": 7,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_turn_002.tscn",
+		"isDeadEnd": false,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 6 },
+	  ]
+	},
+	{
+		"id": 8,
+		"roomFile": "res://assets/dungeon_rooms/1_chunk_turn_002.tscn",
+		"isDeadEnd": false,
+		"chunks": [
+			{ "location": [0, 0], "doorFlags": 6 },
+	  ]
+	},
+	
+	{
+		"id": 9,
+		"roomFile": "res://assets/dungeon_rooms/big_room_001.tscn",
+		"isDeadEnd": false,
+		"chunks": [
+			{ "location": [-1, 0], "doorFlags": 0 },
+			{ "location": [0, 0], "doorFlags": 0 },
+			{ "location": [1, 0], "doorFlags": 0 },
+			{ "location": [2, 0], "doorFlags": 1 },
+			{ "location": [-2, 1], "doorFlags": 8 },
+			{ "location": [-1, 1], "doorFlags": 0 },
+			{ "location": [0, 1], "doorFlags": 0 },
+			{ "location": [1, 1], "doorFlags": 0 },
+			{ "location": [2, 1], "doorFlags": 0 },
+			{ "location": [-2, 2], "doorFlags": 0 },
+			{ "location": [-1, 2], "doorFlags": 0 },
+			{ "location": [0, 2], "doorFlags": 4 },
+			{ "location": [1, 2], "doorFlags": 0 },
+	  ]
+	},
+	{
+		"id": 10,
+		"roomFile": "res://assets/dungeon_rooms/big_room_002.tscn",
+		"isDeadEnd": false,
+		"chunks": [
+			{ "location": [1, -1], "doorFlags": 0 },
+			{ "location": [0, -1], "doorFlags": 1 },
+			{ "location": [-1, -1], "doorFlags": 0 },
+			{ "location": [1, 0], "doorFlags": 2 },
+			{ "location": [0, 0], "doorFlags": 0 },
+			{ "location": [-1, 0], "doorFlags": 8 },
+			{ "location": [1, 1], "doorFlags": 0 },
+			{ "location": [0, 1], "doorFlags": 4 },
+			{ "location": [-1, 1], "doorFlags": 0 },
+	  ]
+	},
+]

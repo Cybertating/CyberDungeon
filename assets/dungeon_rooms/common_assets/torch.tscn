@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgoo0cqkysq64"]
+
+[ext_resource type="PackedScene" uid="uid://bk777mqykfpa6" path="res://assets/dungeon_models/exports/torch.001.fbx" id="1_a3gie"]
+
+[node name="Torch" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("1_a3gie")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.186873)
+
+[node name="torch_001" parent="Model" index="0"]
+cast_shadow = 0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.503386, 0.280415)
+light_color = Color(0.979297, 0.80182, 0.279942, 1)
+light_energy = 1.5
+light_bake_mode = 1
+shadow_enabled = true
+shadow_opacity = 0.4
+shadow_blur = 10.0
+omni_range = 8.0
+omni_attenuation = 0.5
+
+[editable path="Model"]
