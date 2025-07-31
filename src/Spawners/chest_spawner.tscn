@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct7hjgi77u7y1"]
+
+[ext_resource type="Script" uid="uid://biqxkf087btk5" path="res://src/Spawners/chest_spawner.gd" id="1_6vfou"]
+[ext_resource type="PackedScene" uid="uid://chyp68qdl3pe6" path="res://assets/dungeon_models/exports/chest bottom.fbx" id="2_1qgc7"]
+
+[node name="ChestSpawner" type="Node3D"]
+script = ExtResource("1_6vfou")
+spawn_chance = 1.0
+
+[node name="EditorOnly" parent="." instance=ExtResource("2_1qgc7")]
+
+[node name="chest bottom" parent="EditorOnly" index="0"]
+transparency = 0.5
+cast_shadow = 0
+
+[node name="chest top" parent="EditorOnly/chest bottom" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0157634, -0.532289)
+transparency = 0.5
+cast_shadow = 0
+
+[node name="chest\'s gold" parent="EditorOnly/chest bottom" index="1"]
+transparency = 0.5
+cast_shadow = 0
+
+[editable path="EditorOnly"]
